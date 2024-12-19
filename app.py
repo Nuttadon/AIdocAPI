@@ -3,12 +3,10 @@ from flask import Flask, jsonify
 from admin.routes import admin_bp
 from report.routes import report_bp
 from flask_swagger_ui import get_swaggerui_blueprint
-from flask_cors import CORS
 # from products import products_bp
 
 
 app = Flask(__name__, instance_relative_config=True)
-CORS(app) 
 
 app.config.from_pyfile('config.py', silent=True) # load the instance config
 
