@@ -1,6 +1,6 @@
 import os
 from flask import Flask, jsonify
-from admin import admin_bp
+from admin.routes import admin_bp
 from report.routes import report_bp
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
