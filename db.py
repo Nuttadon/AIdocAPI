@@ -6,10 +6,10 @@ import os
 def get_db():
     if 'db' not in g:
         g.db = mysql.connector.connect(
-            host=current_app.config['DB_HOST'],
-            database=current_app.config['DB_DATABASE'],
-            user=current_app.config['DB_USER'],
-            password=current_app.config['DB_PASSWORD']
+            host=os.getenv('DB_HOST'),
+            database=os.getenv('DB_DATABASE'),
+            user=os.getenv('DB_USER'),
+            password=os.getenv('DB_PASSWORD')
         )
         g.db.autocommit = True
     

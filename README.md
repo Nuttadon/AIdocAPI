@@ -1,2 +1,3 @@
 # AIdoc-API
-python main.py
+
+python app.py
