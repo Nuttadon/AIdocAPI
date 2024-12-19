@@ -6,6 +6,7 @@ info:
   version: 1.0.0
 servers:
   - url: http://127.0.0.1:5000
+  - url: https://hammerhead-app-ioge2.ondigitalocean.app
 tags:
   - name: report
     description: Get users report
